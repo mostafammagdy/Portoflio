@@ -13,8 +13,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  // TODO: Replace with your production domain
-  metadataBase: new URL("https://mostafamohamed.dev"),
+  metadataBase: new URL("https://mostafammoussa.vercel.app"),
   title: "Mostafa Mohamed | Software Engineer",
   description:
     "Software Engineer based in Montreal. Full-stack developer specializing in React, Node.js, and cloud-native solutions.",
@@ -30,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://mostafamohamed.dev",
+    url: "https://mostafammoussa.vercel.app",
     siteName: "Mostafa Mohamed | Software Engineer",
     title: "Mostafa Mohamed | Software Engineer",
     description:
@@ -70,7 +69,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Mostafa Mohamed",
   jobTitle: "Software Engineer",
-  url: "https://mostafamohamed.dev",
+  url: "https://mostafammoussa.vercel.app",
   description:
     "Software Engineer based in Montreal. Full-stack developer specializing in React, Node.js, and cloud-native solutions.",
   sameAs: [
