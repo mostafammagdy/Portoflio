@@ -64,16 +64,22 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        {/* Status badge */}
+        {/* Status + Bilingual badges */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="inline-flex items-center gap-2 px-4 py-2 mb-8 border border-neutral-800/80 rounded-full bg-neutral-900/40 backdrop-blur-sm"
+          className="flex items-center justify-center gap-3 flex-wrap mb-8"
         >
-          <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-          <span className="text-sm font-mono text-neutral-400">
-            Available for opportunities
+          <span className="inline-flex items-center gap-2 px-4 py-2 border border-neutral-800/80 rounded-full bg-neutral-900/40 backdrop-blur-sm">
+            <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
+            <span className="text-sm font-mono text-neutral-400">
+              Available for opportunities
+            </span>
+          </span>
+          <span className="inline-flex items-center gap-2 px-3 py-2 border border-cyan-500/20 rounded-full bg-cyan-500/[0.06] backdrop-blur-sm">
+            <span className="text-xs font-mono text-cyan-400 font-semibold">EN / FR</span>
+            <span className="text-xs font-mono text-neutral-400">Bilingual</span>
           </span>
         </motion.div>
 
@@ -113,9 +119,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-neutral-400 text-lg max-w-2xl mx-auto mb-6 leading-relaxed"
         >
-          B.Eng in Software Engineering from York University. Experienced across
-          the full SDLC — from requirements to deployment. Building robust
-          software solutions in Montreal.
+          Software Engineering grad from York University. I build across the
+          full stack: APIs, integrations, web apps. Montreal-based, heading to
+          Toronto in June 2026.
         </motion.p>
 
         {/* Decorative separator */}

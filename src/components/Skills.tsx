@@ -6,11 +6,11 @@ import SectionHeading from "./SectionHeading";
 const skillCategories = [
   {
     title: "Languages",
-    skills: ["C++", "C#", "Java", "JavaScript", "C", "XML", "MATLAB"],
+    skills: ["C++", "C#", "Java", "JavaScript", "TypeScript", "C", "XML", "MATLAB"],
   },
   {
     title: "Frontend",
-    skills: ["React.js", "Angular", "HTML/CSS", "Material UI", "Tailwind CSS"],
+    skills: ["Next.js", "React.js", "Angular", "HTML/CSS", "Material UI", "Tailwind CSS"],
   },
   {
     title: "Backend",

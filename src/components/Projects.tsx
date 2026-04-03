@@ -59,7 +59,7 @@ const featuredProjects = [
     title: "Irving24 Fuel System",
     subtitle: "Full-Stack Point-of-Sale System",
     description:
-      "A production-grade POS system built for a real service station in Quebec, Canada. Handles dual sales models — prepaid fuel dispensing (DIESEL/DEF) and in-store retail — with role-based access control, real-time analytics, inventory tracking, receipt generation with QR codes, and Quebec tax compliance (GST + QST).",
+      "A POS system built for a real Quebec fuel station to replace their manual tracking. It handles two workflows: prepaid fuel dispensing (DIESEL/DEF) at the pumps and standard retail at the counter. Includes inventory management, an analytics dashboard, QR-coded receipts, and GST + QST compliance.",
     features: [
       {
         title: "Point of Sale",
@@ -97,7 +97,7 @@ const featuredProjects = [
       "Winston",
     ],
     // videoSrc: "/irving24-demo.mp4", // Uncomment when video is ready
-    badges: ["Featured Project"],
+    badges: ["Featured Project", "Real-World Impact"],
     links: {
       github: "https://github.com/mostafammagdy/FuelSystem",
     },

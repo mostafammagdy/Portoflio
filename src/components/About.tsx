@@ -24,28 +24,28 @@ export default function About() {
             className="space-y-5"
           >
             <p className="text-neutral-300 leading-relaxed">
-              I&apos;m a Software Engineer based in{" "}
-              <span className="gradient-accent">Montreal, QC</span> with a
-              Bachelor of Engineering in Software Engineering from{" "}
+              I&apos;m a software engineer who graduated from{" "}
               <span className="text-neutral-200 font-medium">
                 York University
               </span>{" "}
-              (2023).
+              in 2023 with a B.Eng in Software Engineering. Currently in{" "}
+              <span className="gradient-accent">Montreal</span>, moving to
+              Toronto in June 2026.
             </p>
             <p className="text-neutral-300 leading-relaxed">
-              I have hands-on experience across the{" "}
+              I&apos;ve worked across the whole development cycle, from
+              requirements and architecture through code and deployment. Most of
+              my experience has been in{" "}
               <span className="text-neutral-200 font-medium">
-                full software development lifecycle
+                payment integrations
               </span>{" "}
-              — from requirements gathering and system design to development,
-              testing, and documentation. I&apos;ve worked on payment
-              integrations, enterprise APIs, and modern web applications.
+              and enterprise APIs.
             </p>
             <p className="text-neutral-300 leading-relaxed">
-              Proficient in{" "}
-              <span className="gradient-accent">C++, C#, and Java</span>, with a
-              proven ability to learn new technologies quickly and contribute
-              effectively in both team-based and independent roles.
+              My main languages are{" "}
+              <span className="gradient-accent">C++, C#, and Java</span>. I pick
+              up new stacks quickly and have worked in both team settings and on
+              my own.
             </p>
           </motion.div>
 
@@ -60,7 +60,7 @@ export default function About() {
             {[
               {
                 label: "Location",
-                value: "Montreal, QC",
+                value: "Toronto, ON (Relocating June 2026)",
                 icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z",
               },
               {

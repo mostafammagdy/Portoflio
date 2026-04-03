@@ -105,8 +105,9 @@ export default function Contact() {
           className="text-center mb-12"
         >
           <p className="text-neutral-400 text-lg max-w-xl mx-auto leading-relaxed">
-            I&apos;m always open to discussing new opportunities, interesting
-            projects, or just having a chat. Feel free to reach out!
+            I&apos;m looking for full-stack roles in Toronto and relocating
+            there in June 2026. If you&apos;re hiring or just want to talk
+            shop, send me a message.
           </p>
         </motion.div>
 
