@@ -49,7 +49,7 @@ const featuredProjects = [
     badges: ["Featured Project", "Creative Tech"],
     links: {
       github: "https://github.com/mostafammagdy/sacred-geometry",
-      liveSite: "https://sacred-geometry.vercel.app",
+      liveSite: "https://sacred-geometry-ivory.vercel.app",
     },
     screenshot: "/screenshots/sacred-geometry.png",
   },
