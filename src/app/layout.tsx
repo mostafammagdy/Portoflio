@@ -81,7 +81,7 @@ const jsonLd = {
     "Full-stack engineer specializing in payment integrations (Stripe, PayPal, PayTabs), enterprise APIs, and POS systems. Montreal, relocating to Toronto July 2026.",
   sameAs: [
     "https://github.com/mostafammagdy",
-    "https://www.linkedin.com/in/mostafa-mohamed-558586155/",
+    "https://www.linkedin.com/in/mostafammoussa/",
   ],
   address: {
     "@type": "PostalAddress",

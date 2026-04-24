@@ -101,8 +101,7 @@ const featuredProjects = [
     links: {
       liveSite: "https://la-floree-creations-web-jovj.vercel.app",
     },
-    // TODO: Add screenshot at /public/screenshots/lafloree.png
-    screenshot: "",
+    screenshot: "/screenshots/floreeadmin.png",
   },
   {
     title: "Sacred Geometry Visualizer",
@@ -173,7 +172,7 @@ const projects = [
       "A full-stack e-commerce web application built with React JS and Node.js. Implemented Java EE components using Spring MVC, IOC, transactions, and security modules.",
     tech: ["React.js", "Node.js", "Spring MVC", "Java EE"],
     links: {
-      github: "https://github.com/mostafammagdy",
+      github: "https://github.com/mostafammagdy/DealHunter",
     },
     // TODO: Add screenshot at /public/screenshots/dealhunter.png
     screenshot: "",

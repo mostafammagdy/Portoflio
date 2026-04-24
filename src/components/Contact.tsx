@@ -20,7 +20,7 @@ const contactLinks = [
   {
     label: "LinkedIn",
     value: "Mostafa Mohamed",
-    href: "https://www.linkedin.com/in/mostafa-mohamed-558586155/",
+    href: "https://www.linkedin.com/in/mostafammoussa/",
     icon: (
       <path
         strokeLinecap="round"
