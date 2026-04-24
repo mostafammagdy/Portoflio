@@ -7,51 +7,53 @@ import FeaturedProject from "./FeaturedProject";
 
 const featuredProjects = [
   {
-    title: "Sacred Geometry Visualizer",
-    subtitle: "Real-Time WebGL Music Visualizer — Audio-Reactive Sacred Geometry",
+    title: "Irving24 Fuel System",
+    subtitle: "Full-Stack Point-of-Sale System",
     description:
-      "A real-time WebGL app that listens to music and generates sacred geometry mathematically derived from the harmonic content of the sound. Musical relationships (intervals, consonance, harmonic series) map to geometric properties (symmetry, color, complexity) using the same integer ratios that appear in both domains. Supports live mic input and file upload with deterministic 60fps pre-analysis.",
+      "A POS system built for a real Quebec fuel station to replace their manual tracking. It handles two workflows: prepaid fuel dispensing (DIESEL/DEF) at the pumps and standard retail at the counter. Includes inventory management, an analytics dashboard, QR-coded receipts, and GST + QST compliance.",
     features: [
       {
-        title: "Audio DSP Pipeline",
+        title: "GST + QST Tax Engine",
         description:
-          "Custom FFT, pitch detection, overtone scanning, consonance scoring (Plomp-Levelt + integer ratios), and spectral flux onset detection — all pure functions, fully unit-testable.",
-        icon: "M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z",
+          "Compound tax calculation (Québec layers QST on top of GST) with configurable rates per product type; itemized audit trail on every transaction.",
+        icon: "M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z",
       },
       {
-        title: "WebGL Dual-Pass Rendering",
+        title: "Dual-Workflow POS",
         description:
-          "Fullscreen SDF mandala with kaleidoscopic folds, Metatron's Cube, Flower of Life, and a 3D stella octangula wireframe overlay with per-vertex note glow.",
-        icon: "M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25",
+          "Prepaid fuel dispensing and retail counter sales share one cart and transaction model; fuel authorizations reconcile against dispense readings.",
+        icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
       },
       {
-        title: "Sound-to-Geometry Mapping",
+        title: "Analytics & Reconciliation",
         description:
-          "Interval ratios drive fold symmetry, pitch maps to Circle of Fifths hue, amplitude controls breathing, consonance gates sacred patterns — all mathematically grounded.",
-        icon: "M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6",
+          "Daily revenue rollups by payment method, fuel grade, and operator shift; end-of-day cash drawer close with discrepancy detection.",
+        icon: "M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4",
       },
       {
-        title: "Offline Pre-Analysis",
+        title: "Security & RBAC",
         description:
-          "Uploaded files are pre-computed at 60fps into a contiguous Float32Array — zero GC during playback, 100ms lookahead for deterministic sync.",
-        icon: "M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z",
+          "JWT auth, role-based access (Admin/Manager/Cashier), rate limiting, and Helmet security headers.",
+        icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z",
       },
     ],
     techStack: [
+      "Express.js",
+      "MongoDB",
       "React",
-      "TypeScript",
-      "WebGL2",
-      "Web Audio API",
-      "GLSL",
       "Vite",
-      "Vitest",
+      "Tailwind CSS",
+      "JWT",
+      "Jest",
+      "Winston",
     ],
-    badges: ["Featured Project", "Creative Tech"],
+    // videoSrc: "/irving24-demo.mp4", // Uncomment when video is ready
+    badges: ["Featured Project", "Real-World Impact"],
     links: {
-      github: "https://github.com/mostafammagdy/sacred-geometry",
-      liveSite: "https://sacred-geometry-ivory.vercel.app",
+      github: "https://github.com/mostafammagdy/FuelSystem",
     },
-    screenshot: "/screenshots/sacred-geometry.png",
+    // TODO: Add screenshot at /public/screenshots/irving24.png
+    screenshot: "",
   },
   {
     title: "La Floree Creation",
@@ -103,53 +105,51 @@ const featuredProjects = [
     screenshot: "",
   },
   {
-    title: "Irving24 Fuel System",
-    subtitle: "Full-Stack Point-of-Sale System",
+    title: "Sacred Geometry Visualizer",
+    subtitle: "Real-Time WebGL Music Visualizer — Audio-Reactive Sacred Geometry",
     description:
-      "A POS system built for a real Quebec fuel station to replace their manual tracking. It handles two workflows: prepaid fuel dispensing (DIESEL/DEF) at the pumps and standard retail at the counter. Includes inventory management, an analytics dashboard, QR-coded receipts, and GST + QST compliance.",
+      "A real-time WebGL app that listens to music and generates sacred geometry mathematically derived from the harmonic content of the sound. Musical relationships (intervals, consonance, harmonic series) map to geometric properties (symmetry, color, complexity) using the same integer ratios that appear in both domains. Supports live mic input and file upload with deterministic 60fps pre-analysis.",
     features: [
       {
-        title: "Point of Sale",
+        title: "Audio DSP Pipeline",
         description:
-          "Unified interface for fuel pump transactions and retail counter sales with real-time cart and tax calculation.",
-        icon: "M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z",
+          "Custom FFT, pitch detection, overtone scanning, consonance scoring (Plomp-Levelt + integer ratios), and spectral flux onset detection — all pure functions, fully unit-testable.",
+        icon: "M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z",
       },
       {
-        title: "Analytics Dashboard",
+        title: "WebGL Dual-Pass Rendering",
         description:
-          "Revenue trends, payment breakdowns, fuel vs. retail splits with 7/14/30-day range charts.",
-        icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
+          "Fullscreen SDF mandala with kaleidoscopic folds, Metatron's Cube, Flower of Life, and a 3D stella octangula wireframe overlay with per-vertex note glow.",
+        icon: "M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25",
       },
       {
-        title: "Inventory & Receipts",
+        title: "Sound-to-Geometry Mapping",
         description:
-          "Real-time stock tracking with low-stock alerts, audit trails, and auto-generated receipt numbers with QR codes.",
-        icon: "M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4",
+          "Interval ratios drive fold symmetry, pitch maps to Circle of Fifths hue, amplitude controls breathing, consonance gates sacred patterns — all mathematically grounded.",
+        icon: "M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6",
       },
       {
-        title: "Security & RBAC",
+        title: "Offline Pre-Analysis",
         description:
-          "JWT auth, role-based access (Admin/Manager/Cashier), rate limiting, and Helmet security headers.",
-        icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z",
+          "Uploaded files are pre-computed at 60fps into a contiguous Float32Array — zero GC during playback, 100ms lookahead for deterministic sync.",
+        icon: "M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z",
       },
     ],
     techStack: [
-      "Express.js",
-      "MongoDB",
       "React",
+      "TypeScript",
+      "WebGL2",
+      "Web Audio API",
+      "GLSL",
       "Vite",
-      "Tailwind CSS",
-      "JWT",
-      "Jest",
-      "Winston",
+      "Vitest",
     ],
-    // videoSrc: "/irving24-demo.mp4", // Uncomment when video is ready
-    badges: ["Featured Project", "Real-World Impact"],
+    badges: ["Featured Project", "Creative Tech"],
     links: {
-      github: "https://github.com/mostafammagdy/FuelSystem",
+      github: "https://github.com/mostafammagdy/sacred-geometry",
+      liveSite: "https://sacred-geometry-ivory.vercel.app",
     },
-    // TODO: Add screenshot at /public/screenshots/irving24.png
-    screenshot: "",
+    screenshot: "/screenshots/sacred-geometry.png",
   },
 ];
 
@@ -184,7 +184,9 @@ const projects = [
     description:
       "Secure backend payment integration with the PayTabs API. Includes wallet functionality, escrow payment system, and fund management for the Darbi platform.",
     tech: ["Node.js", "PayTabs API", "PostgreSQL", "REST APIs"],
-    links: {},
+    links: {
+      github: "https://github.com/Darrby/Darbi.Backend",
+    },
     // TODO: Add screenshot at /public/screenshots/darbi.png
     screenshot: "",
   },

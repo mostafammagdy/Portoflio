@@ -93,7 +93,7 @@ export default function Contact() {
         <SectionHeading
           id="contact"
           title="Contact"
-          subtitle="Let's work together"
+          subtitle="Let's talk."
           sectionNumber={6}
         />
 
@@ -105,9 +105,9 @@ export default function Contact() {
           className="text-center mb-12"
         >
           <p className="text-neutral-400 text-lg max-w-xl mx-auto leading-relaxed">
-            I&apos;m looking for full-stack roles in Toronto and relocating
-            there in June 2026. If you&apos;re hiring or just want to talk
-            shop, send me a message.
+            Relocating to Toronto in July 2026 and opening conversations now for
+            full-stack and integration-engineering roles. Happy to chat about
+            payments infra, API design, or anything shipping-adjacent.
           </p>
         </motion.div>
 

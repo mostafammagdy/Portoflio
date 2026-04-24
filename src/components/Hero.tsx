@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const roles = [
   "Software Engineer",
   "Integration Engineer",
+  "Payments Engineer",
   "Full-Stack Developer",
-  "Problem Solver",
 ];
 
 export default function Hero() {
@@ -119,9 +119,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-neutral-400 text-lg max-w-2xl mx-auto mb-6 leading-relaxed"
         >
-          Software Engineering grad from York University. I build across the
-          full stack: APIs, integrations, web apps. Montreal-based, heading to
-          Toronto in June 2026.
+          Full-stack engineer specializing in payment integrations and enterprise
+          APIs. 3 years shipping against Stripe, PayPal, PayTabs, and a live POS
+          in Quebec. Montreal &rarr; Toronto, July 2026.
         </motion.p>
 
         {/* Decorative separator */}

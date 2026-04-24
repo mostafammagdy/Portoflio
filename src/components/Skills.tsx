@@ -5,34 +5,24 @@ import SectionHeading from "./SectionHeading";
 
 const skillCategories = [
   {
-    title: "Languages",
-    skills: ["C++", "C#", "Java", "JavaScript", "TypeScript", "C", "XML", "MATLAB"],
+    title: "Primary Stack",
+    skills: ["TypeScript", "JavaScript", "React", "Next.js", "Node.js", "PostgreSQL", "MongoDB"],
   },
   {
-    title: "Frontend",
-    skills: ["Next.js", "React.js", "Angular", "HTML/CSS", "Material UI", "Tailwind CSS"],
+    title: "Payments & Integrations",
+    skills: ["Stripe", "PayPal", "PayTabs", "Apache Camel", "REST APIs", "Webhooks"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Spring Boot", ".NET", "Apache Camel", "REST APIs"],
+    title: "Backend & Systems",
+    skills: ["Java", "Spring Boot", "Express.js", "JWT", "C#"],
   },
   {
-    title: "Database",
-    skills: ["PostgreSQL", "MongoDB", "SQL"],
+    title: "Infrastructure",
+    skills: ["Docker", "CI/CD", "Azure DevOps", "Git", "Vercel", "Railway", "Cloudinary"],
   },
   {
-    title: "DevOps & Tools",
-    skills: ["Git", "Docker", "Azure DevOps", "Postman", "Jira", "CI/CD"],
-  },
-  {
-    title: "Architecture",
-    skills: [
-      "Multi-Threaded Systems",
-      "Real-Time Systems",
-      "OOP",
-      "Agile/Scrum",
-      "System Design",
-    ],
+    title: "Foundations",
+    skills: ["C++", "OOP", "System Design", "Agile/Scrum"],
   },
 ];
 

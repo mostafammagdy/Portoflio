@@ -12,14 +12,6 @@ const testimonials = [
     company: "La Floree Creations",
     initials: "SS",
   },
-  {
-    quote:
-      "A reliable and skilled developer who quickly adapts to new challenges. Mostafa's contributions to our enterprise APIs and payment systems were critical to our delivery timelines.",
-    name: "Ahmed K.",
-    role: "Tech Lead",
-    company: "Al Ahly Momkn",
-    initials: "AK",
-  },
 ];
 
 export default function Testimonials() {

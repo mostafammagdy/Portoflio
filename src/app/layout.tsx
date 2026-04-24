@@ -16,13 +16,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mostafammoussa.vercel.app"),
   title: "Mostafa Mohamed | Software Engineer",
   description:
-    "Software Engineer based in Montreal. Full-stack developer specializing in React, Node.js, and cloud-native solutions.",
+    "Full-stack engineer specializing in payment integrations (Stripe, PayPal, PayTabs), enterprise APIs, and POS systems. Montreal, relocating to Toronto July 2026.",
   keywords: [
     "Software Engineer",
     "Full-Stack Developer",
     "React",
     "Node.js",
     "Montreal",
+    "Payments Engineer",
+    "Integration Engineer",
+    "Apache Camel",
+    "Spring Boot",
+    "POS",
+    "Fintech",
+    "Toronto",
   ],
   authors: [{ name: "Mostafa Mohamed" }],
   creator: "Mostafa Mohamed",
@@ -33,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Mostafa Mohamed | Software Engineer",
     title: "Mostafa Mohamed | Software Engineer",
     description:
-      "Software Engineer based in Montreal. Full-stack developer specializing in React, Node.js, and cloud-native solutions.",
+      "Full-stack engineer specializing in payment integrations (Stripe, PayPal, PayTabs), enterprise APIs, and POS systems. Montreal, relocating to Toronto July 2026.",
     // TODO: Add og-image.png (1200x630) to /public
     images: [
       {
@@ -48,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mostafa Mohamed | Software Engineer",
     description:
-      "Software Engineer based in Montreal. Full-stack developer specializing in React, Node.js, and cloud-native solutions.",
+      "Full-stack engineer specializing in payment integrations (Stripe, PayPal, PayTabs), enterprise APIs, and POS systems. Montreal, relocating to Toronto July 2026.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -71,14 +78,14 @@ const jsonLd = {
   jobTitle: "Software Engineer",
   url: "https://mostafammoussa.vercel.app",
   description:
-    "Software Engineer based in Montreal. Full-stack developer specializing in React, Node.js, and cloud-native solutions.",
+    "Full-stack engineer specializing in payment integrations (Stripe, PayPal, PayTabs), enterprise APIs, and POS systems. Montreal, relocating to Toronto July 2026.",
   sameAs: [
     "https://github.com/mostafammagdy",
     "https://www.linkedin.com/in/mostafa-mohamed-558586155/",
   ],
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Montreal",
+    addressLocality: "Montreal (relocating Toronto, July 2026)",
     addressRegion: "QC",
     addressCountry: "CA",
   },
@@ -100,6 +107,12 @@ const jsonLd = {
     "REST APIs",
     "Docker",
     "CI/CD",
+    "Stripe",
+    "PayPal",
+    "PayTabs",
+    "Apache Camel",
+    "Payment Integration",
+    "Point of Sale",
   ],
 };
 

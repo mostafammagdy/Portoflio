@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import SectionHeading from "./SectionHeading";
 
 export default function About() {
@@ -23,29 +24,48 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-5"
           >
+            <div className="flex items-center gap-4 mb-2">
+              <div className="relative shrink-0">
+                <Image
+                  src="/headshot.png"
+                  alt="Mostafa Mohamed"
+                  width={96}
+                  height={96}
+                  className="rounded-full object-cover object-top ring-2 ring-cyan-400/20"
+                  priority
+                />
+              </div>
+              <div>
+                <p className="text-neutral-200 font-medium font-mono">Mostafa Mohamed</p>
+                <p className="text-xs text-cyan-400 font-mono">Full-Stack · Payments Engineer</p>
+              </div>
+            </div>
             <p className="text-neutral-300 leading-relaxed">
-              I&apos;m a software engineer who graduated from{" "}
+              Software engineer out of{" "}
               <span className="text-neutral-200 font-medium">
                 York University
               </span>{" "}
-              in 2023 with a B.Eng in Software Engineering. Currently in{" "}
-              <span className="gradient-accent">Montreal</span>, moving to
-              Toronto in June 2026.
+              (B.Eng, 2023). Based in{" "}
+              <span className="gradient-accent">Montreal</span> right now,
+              heading to Toronto this July.
             </p>
             <p className="text-neutral-300 leading-relaxed">
-              I&apos;ve worked across the whole development cycle, from
-              requirements and architecture through code and deployment. Most of
-              my experience has been in{" "}
+              I&apos;ve shipped{" "}
               <span className="text-neutral-200 font-medium">
-                payment integrations
+                payment systems
               </span>{" "}
-              and enterprise APIs.
+              and enterprise APIs for real businesses — Stripe, PayPal, PayTabs,
+              the whole checkout headache. Built a POS system for a gas station
+              in Quebec. Built an e-commerce platform for a resin art shop. If
+              money moves through it, I&apos;ve probably touched the code.
             </p>
             <p className="text-neutral-300 leading-relaxed">
-              My main languages are{" "}
-              <span className="gradient-accent">C++, C#, and Java</span>. I pick
-              up new stacks quickly and have worked in both team settings and on
-              my own.
+              Core stack is{" "}
+              <span className="gradient-accent">C++, C#, and Java</span>, but I
+              go wherever the problem is — lately that&apos;s been TypeScript,
+              React, WebGL, and writing GLSL shaders for fun. But my base is
+              integration work: keeping data, money, and systems in sync across
+              APIs that weren&apos;t designed to talk to each other.
             </p>
           </motion.div>
 
@@ -60,7 +80,7 @@ export default function About() {
             {[
               {
                 label: "Location",
-                value: "Toronto, ON (Relocating June 2026)",
+                value: "Toronto, ON (Relocating July 2026)",
                 icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z",
               },
               {
@@ -70,7 +90,7 @@ export default function About() {
               },
               {
                 label: "Experience",
-                value: "2+ years professional",
+                value: "~3 years (full-time + freelance)",
                 icon: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
               },
               {
